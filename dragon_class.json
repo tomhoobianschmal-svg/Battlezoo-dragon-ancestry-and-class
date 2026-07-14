@@ -4,108 +4,63 @@
       "name": "Dragon (Battlezoo)",
       "hd": 10,
       "saving_throws": ["Constitution", "Charisma"],
-      "armor_proficiencies": ["None (Replaced by Draconic Resilience)"],
-      "weapon_proficiencies": ["Simple weapons", "Natural weapons"],
+      "armor_proficiencies": ["None (Draconic Resilience)"],
+      "weapon_proficiencies": ["Simple", "Natural"],
       "tool_proficiencies": ["None"],
-      "skills_choices": [
-        "Athletics",
-        "Intimidation",
-        "History",
-        "Insight",
-        "Perception",
-        "Survival"
-      ],
       "skills_amount": 2,
-      "levels": [
-        {
-          "level": 1,
-          "features": ["Draconic Resilience", "Natural Weapons", "Time Dragon Breath Weapon"]
-        },
-        {
-          "level": 2,
-          "features": ["Draconic Archetype (Subclass Choice)", "Draconic Senses"]
-        },
-        {
-          "level": 3,
-          "features": ["Draconic Gift (Tier 1)"]
-        },
-        {
-          "level": 4,
-          "features": ["Ability Score Improvement"]
-        },
-        {
-          "level": 5,
-          "features": ["Extra Attack", "Breath Weapon Upgrade"]
-        },
-        {
-          "level": 7,
-          "features": ["Draconic Gift (Tier 2)"]
-        },
-        {
-          "level": 9,
-          "features": ["Draconic Flight (Wings)"]
-        },
-        {
-          "level": 11,
-          "features": ["Draconic Gift (Tier 3)", "Breath Weapon Upgrade"]
-        },
-        {
-          "level": 13,
-          "features": ["Hardened Scales"]
-        },
-        {
-          "level": 15,
-          "features": ["Draconic Gift (Tier 4)"]
-        },
-        {
-          "level": 17,
-          "features": ["Breath Weapon Upgrade"]
-        },
-        {
-          "level": 20,
-          "features": ["Draconic Ascension (True Dragon Size)"]
-        }
+      "skills_choices": ["Athletics", "Intimidation", "History", "Insight", "Perception", "Survival"],
+      "features": [
+        "1#Draconic Resilience",
+        "1#Time Dragon Breath Weapon",
+        "2#Draconic Senses",
+        "3#Draconic Gift (Tier 1)",
+        "4#Ability Score Improvement",
+        "5#Extra Attack",
+        "5#Breath Weapon Upgrade",
+        "7#Draconic Gift (Tier 2)",
+        "9#Draconic Flight",
+        "11#Draconic Gift (Tier 3)",
+        "11#Breath Weapon Upgrade",
+        "13#Hardened Scales",
+        "15#Draconic Gift (Tier 4)",
+        "17#Breath Weapon Upgrade",
+        "20#Draconic Ascension"
+      ]
+    }
+  ],
+  "subclasses": [
+    {
+      "name": "Dragon Mage",
+      "className": "Dragon (Battlezoo)",
+      "features": [
+        "2#Draconic Spellcasting"
       ]
     }
   ],
   "features": [
     {
       "name": "Draconic Resilience",
-      "source": "Dragon (Battlezoo) Level 1",
-      "description": "While you are not wearing armor, your AC equals 10 + your Dexterity modifier + your Constitution modifier. You can use a shield and still gain this benefit."
+      "description": "While unarmored, your AC equals 10 + Dex + Con modifier. You can use a shield."
     },
     {
       "name": "Time Dragon Breath Weapon",
-      "source": "Dragon (Battlezoo) Level 1",
-      "description": "As an action, you exhale a 15-foot cone of shifting temporal energy. Creatures must make a Constitution saving throw against your Spell DC (8 + Prof + CON). On a failure, they take 2d6 temporal force damage and their movement speed is halved for 1 turn. On a success, they take half damage and their speed is normal."
+      "description": "As an action, exhale a 15-foot cone of temporal energy. Constitution saving throw or targets take 2d6 temporal force damage and speed is halved for 1 turn."
     },
     {
       "name": "Breath Weapon Upgrade",
-      "source": "Dragon (Battlezoo) Level 5",
       "description": "Your Breath Weapon damage increases by 2d6 at levels 5 (4d6), 11 (6d6), and 17 (8d6)."
     },
     {
-      "name": "Draconic Flight (Wings)",
-      "source": "Dragon (Battlezoo) Level 9",
-      "description": "Your draconic wings fully mature. You gain a permanent flying speed equal to your current walking speed."
+      "name": "Draconic Flight",
+      "description": "Your wings mature. You gain a permanent flying speed equal to your walking speed."
     },
     {
-      "name": "Draconic Ascension (True Dragon Size)",
-      "source": "Dragon (Battlezoo) Level 20",
-      "description": "You break the limits of your mortal shell. Your permanently become a Large creature, your reach increases by 5 feet, and you gain immunity to your choice of temporal or force damage."
-    }
-  ],
-  "subclasses": [
+      "name": "Draconic Ascension",
+      "description": "You permanently become a Large creature, your reach increases by 5 feet, and you gain force immunity."
+    },
     {
-      "name": "Dragon Mage",
-      "class": "Dragon (Battlezoo)",
-      "features": [
-        {
-          "level": 2,
-          "name": "Draconic Spellcasting",
-          "description": "You learn to channel spells directly from your draconic bloodline. You use Charisma as your spellcasting ability modifier for these spells."
-        }
-      ]
+      "name": "Draconic Spellcasting",
+      "description": "You learn to channel spells directly from your draconic bloodline using Charisma."
     }
   ]
 }
